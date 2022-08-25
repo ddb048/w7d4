@@ -338,3 +338,33 @@ Body:
     "trackNumber": 1
     }
 ]
+
+---------
+PROBLEM 12
+
+Request components:
+
+Method: GET
+
+URL: albums/:albumId/songs
+
+Headers: none
+
+Body: none
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+[
+    {
+    "name": "Song Name",
+    "songId": 1,
+    "albumId": 1,
+    "lyrics": "All stringLyricsWEscapes"
+    "trackNumber": 1
+    }
+]
