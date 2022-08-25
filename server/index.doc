@@ -238,3 +238,103 @@ Body:
             "trackNumber": number
         ]
     }
+
+---------
+PROBLEM 9
+
+Request components:
+
+Method: PUT
+
+URL: albums/:albumID
+
+Headers: "Content-Type": "application/json"
+
+Body:
+
+{
+        "name": "Stadium Arcadium",
+
+        },
+        "songs": [
+            {object for each song
+            "name": "stringName",
+            "lyrics": "stringLyricsWEscapes",
+            "trackNumber": number
+        ]
+    }
+
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+
+{
+        "name": "Stadium Arcadium",
+
+        },
+        "songs": [
+            {object for each song
+            "name": "stringName",
+            "lyrics": "stringLyricsWEscapes",
+            "trackNumber": number
+        ]
+    }
+
+---------
+PROBLEM 10
+
+Request components:
+
+Method: DELETE
+
+URL: albums/:albumID
+
+Headers:
+
+Body:
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+{
+    "message": "Sucessfully deleted"
+}
+
+---------
+PROBLEM 11
+
+Request components:
+
+Method: GET
+
+URL: artists/:artistID/songs
+
+Headers: none
+
+Body: none
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+[
+    {
+    "name": "Song Name",
+    "songId": 1,
+    "albumId": 1,
+    "lyrics": "All stringLyricsWEscapes"
+    "trackNumber": 1
+    }
+]
