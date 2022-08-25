@@ -45,3 +45,84 @@ Status code: 200
 Headers:
 Content-Type: application/json
 Body: information about all the artists
+
+PROBLEM 3
+
+Method: PUT
+URL: /artists/:artistID
+Headers:
+"Content-Type" : "application/json"
+Body:
+
+{"name": "Queen",
+"artistID": 2
+    "albums": [
+        {
+            "name": "Night at the Opera",
+            "albumID": 1,
+            "artistID": 2
+        }
+    ]}
+
+Response components:
+
+Status code: 201
+Headers:
+"Content-Type" : "application/json"
+Body:
+{"name": "Queen",
+"artistID": 2
+    "albums": [
+        {
+            "name": "Night at the Opera",
+            "albumID": 1,
+            "artistID": 2
+        }
+    ]}
+
+---------
+PROBLEM 4
+
+Request components:
+
+Method: DELETE
+
+URL: /artists/:artistID
+
+Headers:
+
+Body:
+
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type" : "application/json"
+
+Body:
+{
+    "message": "Sucessfully deleted"
+}
+
+---------
+PROBLEM 5
+
+Request components:
+
+Method:
+
+URL:
+
+Headers:
+
+Body:
+
+
+Response components:
+
+Status code:
+
+Headers:
+
+Body:
