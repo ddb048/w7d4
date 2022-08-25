@@ -1,0 +1,47 @@
+PROBLEM 1
+
+Method: GET
+URL: /artists/:artistID
+Headers: none
+Body: none
+Response components:
+
+Status code: 200
+Headers:
+Content-Type: application/json
+Body:
+
+{
+    "artistID": number,
+    "name": "artistNameAsString",
+    "albums": [
+        {
+            "name": "albumNameAsString",
+            "albumID": number,
+            "artistID": number
+        }
+    ]
+}
+
+PROBLEM 2
+
+Method: POST
+URL: /artists
+Headers:
+"Content-Type" : "application/json"
+Body:
+
+{"name": "artistNameAsString",
+    "albums": [
+        {
+            "name": "albumNameAsString",
+            "albumID": number,
+            "artistID": number
+        }
+    ]}
+Response components:
+
+Status code: 200
+Headers:
+Content-Type: application/json
+Body: information about all the artists
