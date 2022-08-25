@@ -177,3 +177,64 @@ Body:
             "albumId": number}
         ]
     },
+---------
+PROBLEM 8
+
+Request components:
+
+Method: POST
+
+URL: artists/:artistID/albums
+
+Headers: "Content-Type": "application/json"
+
+Body:
+
+{
+        "name": "Stadium Arcadium",
+
+
+        "artist": {
+            "name": "Red Hot Chili Peppers",
+
+        },
+        "songs": [
+            {object for each song
+            "name": "stringName",
+            "lyrics": "stringLyricsWEscapes",
+            "trackNumber": number
+        ]
+    }
+
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+
+[
+    {
+        "name": "Stadium Arcadium",
+        "albumId": 1,
+        "artistId": 1
+    }
+]
+
+{
+        "name": "Stadium Arcadium",
+
+
+        "artist": {
+            "name": "Red Hot Chili Peppers",
+
+        },
+        "songs": [
+            {object for each song
+            "name": "stringName",
+            "lyrics": "stringLyricsWEscapes",
+            "trackNumber": number
+        ]
+    }
