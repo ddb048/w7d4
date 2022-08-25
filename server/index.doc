@@ -110,19 +110,70 @@ PROBLEM 5
 
 Request components:
 
-Method:
+Method: GET
 
-URL:
+URL: artists/:artistID/albums
 
-Headers:
+Headers: NONE
 
-Body:
+Body:NONE
 
 
 Response components:
 
-Status code:
+Status code: 200
 
-Headers:
+Headers: "Content-Type": "application/json"
 
 Body:
+
+[
+    {
+        "name": "Stadium Arcadium",
+        "albumId": 1,
+        "artistId": 1
+    }
+]
+
+---------
+PROBLEM 6
+
+Request components:
+
+Method: GET
+
+URL: /albums/:albumID
+
+Headers: NONE
+
+Body:NONE
+
+
+Response components:
+
+Status code: 200
+
+Headers: "Content-Type": "application/json"
+
+Body:
+
+
+    {
+        "name": "Stadium Arcadium",
+        "albumId": 1,
+        "artistId": 1,
+        "artist": {
+            "name": "Red Hot Chili Peppers",
+            "artistId": 1
+        },
+        "songs": [
+            {object for each song
+            "name": "stringName",
+            "lyrics": "stringLyricsWEscapes",
+            "trackNumber": number,
+            "songId": number,
+            "createdAt": "worldTimeString",
+            "updatedAt": "worldTimeString",
+            "albumId": number}
+        ]
+    },
